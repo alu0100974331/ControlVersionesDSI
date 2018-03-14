@@ -5,26 +5,26 @@
 <meta charset="utf-8">
 <title>Hello...</title>
 <link rel="stylesheet" href="hello-world.css" type="text/css" />
-
 </head>
 
 <body>
 <div id="mainContent">
 <p id="helloText">?</p>
 <button id="clickButton" class="buttonStyle">click me</button>
+<button id="clickmeagain" class="buttonStyle">again</button>
+
 </div>
 <script> 
 var myButton = document.getElementById("clickButton");
+
 var myText = document.getElementById("helloText");
 
 myButton.addEventListener('click', doSomething, false);
 
 function doSomething() {
+	var myButton2 = document.getElementById("clickmeagain")
 	myText.textContent = "Hola Mundo!";
-}
-
-function doSomething2(){
-	myText.textContent = "?";
+	//document.body.appendChild(myButton2);
 }
 
 </script>
