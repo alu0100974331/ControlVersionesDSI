@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <title>Hello...</title>
-<link rel="stylesheet" href="hello-world.1.css" type="text/css" />
+<link rel="stylesheet" href="hello-world.css" type="text/css" />
 </head>
 
 <body>
@@ -12,14 +12,17 @@
 <p id="helloText">?</p>
 <button id="clickButton" class="buttonStyle">Click me baby!</button>
 <div id = "espacio"></div>
-</div>
+</div>	
+	
+	
 
 <script> 
 var myButton = document.getElementById("clickButton");
 var myText = document.getElementById("helloText");
+var myButtondd = document.getElementById("clickButton");
 
 myButton.addEventListener('click', doSomething, false);
-
+myButtondd.addEventListener('click',doSomething,false);
 
 function doSomething() {
 	myText.textContent = "Hola Mundo!";
