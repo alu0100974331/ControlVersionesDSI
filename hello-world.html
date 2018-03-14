@@ -11,7 +11,7 @@
 <div id="mainContent">
 <p id="helloText">?</p>
 <button id="clickButton" class="buttonStyle">Click me!</button>
-<div id = "espacio"></div>
+<button id="clickmeagain" class="buttonStyle">again</button>
 </div>
 
 <script> 
@@ -22,11 +22,8 @@ myButton.addEventListener('click', doSomething, false);
 
 
 function doSomething() {
+	var myButton2 = document.getElementById("clickmeagain")
 	myText.textContent = "Hola Mundo!";
-}
-
-function doSomething2(){
-	myText.textContent = "?";
 }
 
 </script>
