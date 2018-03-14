@@ -10,27 +10,20 @@
 <body>
 <div id="mainContent">
 <p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">Click me baby!</button>
+<button id="clickButton" class="buttonStyle">Click me darling!</button>
 <button id="clickmeagain" class="buttonStyle">again</button>
-<div id = "espacio"></div>
-</div>	
-	
-	
+</div>
 
 <script> 
 var myButton = document.getElementById("clickButton");
 var myText = document.getElementById("helloText");
-var myButtondd = document.getElementById("clickButton");
 
 myButton.addEventListener('click', doSomething, false);
-myButtondd.addEventListener('click',doSomething,false);
+
 
 function doSomething() {
+	var myButton2 = document.getElementById("clickmeagain")
 	myText.textContent = "Hola Mundo!";
-}
-
-function doSomething2(){
-	myText.textContent = "?";
 }
 
 </script>
